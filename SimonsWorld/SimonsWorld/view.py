@@ -8,11 +8,12 @@ import os
 mailgun_api_key = os.environ["MAILGUN_API_KEY"]
 
 holder = []
-all_html_files = glob.glob("content/*.html")
+all_html_files = glob.glob("templates/*.html")
 for single in all_html_files:
     file_name = os.path.basename(single)
     name_only, extension = os.path.splitext(file_name)
-    holder.append(name_only)
+    if name_only != 'base':
+        holder.append(name_only)
 
 
 def index(request):
