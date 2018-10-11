@@ -8,6 +8,7 @@ django = "*"
 requests = "*"
 "glob2" = "*"
 gunicorn = "*"
+django-heroku = "*"
 
 [dev-packages]
 
