@@ -26,7 +26,7 @@ SECRET_KEY = '&nc0g7@%%91f@67hf(&qvyh%rm7$6dks@=s$=j)p_%-rt4b-*n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://frozen-citadel-14854.herokuapp.com"]
 
 
 # Application definition
