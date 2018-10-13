@@ -48,7 +48,6 @@ def connect_with_me(request):
         HttpResponse=('''<h1>this crazy</h1>''')
         return HttpResponse
     else:
-        send_simple_message()
         context = {
             "title": "Contact Me",
             "y": holder,
