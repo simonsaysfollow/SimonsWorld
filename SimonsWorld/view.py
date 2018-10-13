@@ -56,15 +56,3 @@ def connect_with_me(request):
 
         }
         return render(request, "contact.html", context)
-
-
-def send_simple_message():
-    return requests.post(
-        "https://api.mailgun.net/v3/sandbox7438f420bf8c47ce9b892bbb723eb756.mailgun.org",
-        auth=("api", mailgun_api_key),
-        data={"from": "Excited User <sandbox7438f420bf8c47ce9b892bbb723eb756.mailgun.org>",
-              "to": ["simonsaysfollow@gmail.com"],
-              "subject": "Hello",
-              "text": "Testing some Mailgun awesomness!"})
-
-sen
