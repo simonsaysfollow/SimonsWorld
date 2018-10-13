@@ -36,17 +36,19 @@ def second(request):
 
 def connect_with_me(request):
     
-    if request.method == "POST":
+    if request.method != "GET":
+        first = request.GET["user_first"]
+        last = request.GET["user_last"]
+        email = request.GET["user_mail"]
+        message = request.GET["user_message"]
+        phone = request.GET["phone_number"]
+        company = request.GET["company_name"]
 
-        first = request.POST["user_first"]
-        last = request.POST["user_last"]
-        email = request.POST["user_mail"]
-        message = request.POST["user_message"]
-        phone = request.POST["phone_number"]
-        company = request.POST["company_name"]
-        
-    else:
     
+        HttpResponse=('''<h1>this crazy</h1>''')
+        return HttpResponse
+    else:
+        send_simple_message()
         context = {
             "title": "Contact Me",
             "y": holder,
@@ -55,3 +57,14 @@ def connect_with_me(request):
         }
         return render(request, "contact.html", context)
 
+
+def send_simple_message():
+    return requests.post(
+        "https://api.mailgun.net/v3/sandbox7438f420bf8c47ce9b892bbb723eb756.mailgun.org",
+        auth=("api", mailgun_api_key),
+        data={"from": "Excited User <sandbox7438f420bf8c47ce9b892bbb723eb756.mailgun.org>",
+              "to": ["simonsaysfollow@gmail.com"],
+              "subject": "Hello",
+              "text": "Testing some Mailgun awesomness!"})
+
+sen
