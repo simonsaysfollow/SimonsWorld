@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static%}
+{% block content %}
+<div class="aboutPage">
+    <div class="row">
+        <div class="col-lg-3">
+            <img class="faceImg" src="/static/imgs/headshot.jpg">
+        </div>
+        <div class="col-lg-6">
+            <p class="bio">Hello World, My name is Simon Tekeste. I am super excited to have you all here. One of the many great things 
+                in this world is our ability to express ourselves and create. Coding has given me that outlet. 
+                Everyday I am capable of bring my ideas to life. </p>
+            <div class="linkImg">
+                <div class="row">
+                    <a href="mailto:St.tekeste@gmail.com"><img class="contactImg" src="/static/imgs/emailicon.png"></a>
+                    <a href="github.com"><img class="contactImg" src="/static/imgs/github.png"></a>
+                    <a href="Linkedin.com"><img class="contactImg" src="/static/imgs/linkedin.png"></a>
+        
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="education">
+                <h3><u>Education</u></h3>
+                <div class="ucsb">  
+                    <img class="schoolLogos" src="/static/imgs/ucsb_logo.png">
+                    <p>University of California, Santa Barbara</p>
+                </div>
+                <div class="kickstart">
+                    <img class="schoolLogos" src="/static/imgs/kickstartLogo.jpg">
+                    <p>kickstart Coding</p>
+                </div>
+                <div class="peralta">
+                    <img class="schoolLogos" src="/static/imgs/peraltaLogo.png">
+                    <p>Laney City College<br/>&<br/>
+                    Berkeley City College</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="proj">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 style="border-bottom:1px solid lightblue;">Projects</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <img class="projectImg" src="/static/imgs/github.png" />
+            </div>
+            <div class="col-lg-9">
+                <p>An idea that caused me to pursue a career change. Seeing it come to life has given me immense satisfaction and motivation.
+                    Let me introduce to you, DINDER. Dinder will be a mobile app tailored to helping users find amazing new food and restaurants.
+                    Dinder's main focus is on user interaction. Don't believe me? Check out the web version ... <a href="https://secret-oasis-95536.herokuapp.com/">Dinder</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
