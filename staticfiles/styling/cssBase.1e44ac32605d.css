@@ -1,0 +1,212 @@
+
+header {
+    background-color: white;
+    position: sticky;
+    z-index: 3;
+}
+ 
+.nav {
+    align-items: baseline;
+}
+
+.nameName{
+    left: 0;
+}
+
+.linkList {
+    position: absolute;
+   right: 0;
+}
+
+.navBtn {
+    color: black;
+    margin-right: 45px; 
+    font-size: 14pt;
+}
+
+.summary {
+    background: lightcoral;
+}
+
+.homePage {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background: url("/static/imgs/sf_life2.c2ea64f5fc96.jpg");
+    background-repeat: no-repeat;
+}
+
+
+
+.jobTitle {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 100px;
+}
+
+
+.faceImg {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+    float: right;
+
+}
+
+.linkImg {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+   
+}
+
+.contactImg{
+    text-align: center;
+    width: 80px;
+    height: 80px;
+}
+
+.aboutPage { 
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+
+.dropEdu > h3 { 
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.gridDrop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 100px;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.dropProj {
+    margin-top: 25px;
+    
+}
+.dropProj > h3 {
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.projFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+
+.bio {
+    text-align: center;
+}
+
+
+.bio > p {
+    margin-top: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16pt;
+}
+
+.schoolLogos {
+    width: 250px;
+    height: 250px;
+   
+    
+}
+.ucsb, .peralta, .kickstart {
+    text-align: center;
+    height: 150px;  
+}
+
+.project-hr {
+    width: 75%;
+    margin: 0 auto; 
+    border-top: 1px solid turquoise;
+    margin-bottom: 50px;
+    
+    
+}
+.proj1 {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 1fr; 
+    height: 300px;
+    margin-bottom: 80px;
+}    
+
+.left {
+    
+    margin-right:70px;
+    
+}
+.right {
+    margin-left: 70px;    
+}
+
+
+.ImageDescription {
+   text-align: center;
+    
+}
+.ImageDescription > p {
+   margin-top: 10px;
+   text-align: center;
+    
+}
+
+.hr-command {
+    border: none;
+    border-top: 1px solid lightgrey;
+    width: 50%;
+    text-align:center; 
+    margin: 0 auto; 
+    
+}
+
+.ImagePro {
+    text-align: center;
+}
+
+.imghover:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+    filter: brightness(80%)  
+}
+
+.dinder {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ContactPage {
+    text-align: center;
+
+   
+}
+.ContactHolder {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.first {
+    height: auto;
+}
+
+
+
