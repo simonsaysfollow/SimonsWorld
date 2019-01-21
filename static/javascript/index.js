@@ -29,7 +29,13 @@ function showNumber() {
         x.style.transition = "2s ease";
         x.style.height = "100px";
         x.style.fontSize = "22pt";
-        x.textContent = "Cell: (510)734-9328"
+        // x.textContent = "Cell: (510)734-9328"
+        let anchor = document.createElement("a");
+        let linkText = document.createTextNode("Cell: (510)734-9328");
+        anchor.appendChild(linkText);
+        anchor.href = "tel:5107349328";
+        x.appendChild(anchor)
+
     }
     
 }
