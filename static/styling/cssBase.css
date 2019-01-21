@@ -2,10 +2,10 @@
 header {
     background-color: white;
     position: static;
-    z-index: 3;
+    /* z-index: 3; */
 }
 .navbar{
-    position: static;
+    position: absolute;
 }
  
 .nav {
