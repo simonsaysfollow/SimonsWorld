@@ -24,4 +24,4 @@ def contact(request):
     context = {
         "title":"Contact"
     }
-    return render(request, 'contact.html', context)
+    return render(request, 'Contact.html', context)
