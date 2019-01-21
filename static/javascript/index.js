@@ -18,8 +18,12 @@ writeDev()
 
 function showNumber() {
     var x = document.querySelector(".showNumber");
+    let anchor = document.createElement("a");
+    
     if (x.style.display === "flex") {
         x.style.display = "none";
+    
+
        
     } else {
         x.style.display = "flex";
@@ -29,12 +33,14 @@ function showNumber() {
         x.style.transition = "2s ease";
         x.style.height = "100px";
         x.style.fontSize = "22pt";
-        // x.textContent = "Cell: (510)734-9328"
-        let anchor = document.createElement("a");
-        let linkText = document.createTextNode("Cell: (510)734-9328");
-        anchor.appendChild(linkText);
-        anchor.href = "tel:5107349328";
-        x.appendChild(anchor)
+        //x.textContent = "Cell: (510)734-9328"
+
+        if (x.getElementsByTagName('a').length < 1 ){ 
+            let linkText = document.createTextNode("(510)734-9328");
+            anchor.appendChild(linkText);
+            anchor.href = "tel:5107349328";
+            x.appendChild(anchor)
+        }
 
     }
     

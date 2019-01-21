@@ -10,6 +10,7 @@ header {
 }
 
 .nameName{
+    position: sticky;
     left: 0;
 }
 
@@ -258,7 +259,7 @@ header {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .jobTitle {
         position: absolute;
         right: 20px;
