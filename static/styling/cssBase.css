@@ -4,6 +4,9 @@ header {
     position: static;
     z-index: 3;
 }
+.navbar{
+    position: static;
+}
  
 .nav {
     align-items: baseline;
