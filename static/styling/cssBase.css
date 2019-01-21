@@ -1,7 +1,7 @@
 
 header {
     background-color: white;
-    position: sticky;
+    position: absolute;
     z-index: 3;
 }
  
@@ -10,7 +10,6 @@ header {
 }
 
 .nameName{
-    position: sticky;
     left: 0;
 }
 
