@@ -1,11 +1,12 @@
 
 header {
     background-color: white;
-    position: static;
-    /* z-index: 3; */
+    position: sticky;
+    z-index: 3;
 }
 .navbar{
-    position: absolute;
+    position: static;
+
 }
  
 .nav {
@@ -35,7 +36,7 @@ header {
 }
 
 .homePage {
-    position: fixed;
+    position: absolute;
     min-width: 100%;
     min-height: 100%;
     background: url(/static/imgs/sf_life2.jpg);
