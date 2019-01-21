@@ -3,59 +3,59 @@
 {% block content %}
 <div class="aboutPage">
     <div class="summary">
-        <div class="row">
-            <div class="col-lg-3">
+        <!-- <div class="row"> -->
+            <!-- <div class="col-lg-3"> -->
                 <img class="faceImg" src="/static/imgs/headshot.jpg">
-            </div>
-            <div class="col-lg-7">
+            <!-- </div> -->
+            <!-- <div class="col-lg-7"> -->
                 <div class="bio">
                     <p> Hello World, My name is Simon Tekeste. I am super excited to have you all here. One of the many great things 
                         in this world is our ability to express ourselves and create. Coding has given me that outlet. 
                         Everyday I am capable of bring my ideas to life. 
                     </p>  
-                    <button class="w3-button w3-round-xxlarge btnForContact" style="background-color:lightblue" onclick="visable()">
-                        OMG! Love you
-                    </button>
                 </div>  
-            </div>
-        </div>
+            <!-- </div> -->
+        <!-- </div> -->
     </div>
     
     <div class="dropProj">
         <h3>Projects</h3>
         <hr class="project-hr">
-        <div class="proj1 left w3-animate-left" style="animation-duration: 2s;transition: 1s ease" >
-            
-            <div class="ImagePro">
-                <img class="imghover" src="/static/imgs/DINDER.png" style="width:500px;height:300px;">
-            </div>
-            <div class="ImageDescription">
-                <h3>Dinder</h3>
-                <hr  class="hr-command">
-                <p>
-                     An idea that caused me to pursue a career change. Seeing it come to life has given me immense satisfaction and
-                    motivation.Let me introduce to you, DINDER. Dinder will be a mobile app tailored to helping users find amazing new
-                    food and restaurants. Dinder's main focus is on user interaction. Don't believe me? Check out the web version ... <a
-                    href="https://secret-oasis-95536.herokuapp.com/">Dinder</a>
-                </p>
+
+        <div class="display1">
+            <div class="proj1 left w3-animate-left" style="animation-duration: 2s;transition: 1s ease" > 
+                <div class="ImagePro">
+                    <img class="imghover" src="/static/imgs/DINDER.png" >
+                </div>
+                <div class="ImageDescription">
+                    <h3>Dinder</h3>
+                    <hr  class="hr-command">
+                    <p>
+                        An idea that caused me to pursue a career change. Seeing it come to life has given me immense satisfaction and
+                        motivation.Let me introduce to you, DINDER. Dinder will be a mobile app tailored to helping users find amazing new
+                        food and restaurants. Dinder's main focus is on user interaction. Don't believe me? Check out the web version ... <a
+                        href="https://secret-oasis-95536.herokuapp.com/">Dinder</a>
+                    </p>
+                </div>
             </div>
         </div>
-        
-        <div class="proj1 right w3-animate-right" style="animation-duration: 3s;transition: 1s ease">
-            <div class="ImageDescription">
-                <h3>React</h3>
-                <hr class="hr-command">
-                <p>
-                    An idea that caused me to pursue a career change. Seeing it come to life has given me immense satisfaction
-                    and
-                    motivation.Let me introduce to you, DINDER. Dinder will be a mobile app tailored to helping users find
-                    amazing new
-                    food and restaurants. Dinder's main focus is on user interaction. Don't believe me? Check out the web
-                    version ... <a href="https://secret-oasis-95536.herokuapp.com/">Dinder</a>
-                </p>
-            </div>
-            <div class="ImagePro">
-                <img class="imghover" src="/static/imgs/DINDER.png" style="width:500px;height:300px;">
+        <div class="display2">
+            <div class="proj1 right w3-animate-right" style="animation-duration: 3s;transition: 1s ease">
+                <div class="ImageDescription">
+                    <h3>React</h3>
+                    <hr class="hr-command">
+                    <p>
+                        An idea that caused me to pursue a career change. Seeing it come to life has given me immense satisfaction
+                        and
+                        motivation.Let me introduce to you, DINDER. Dinder will be a mobile app tailored to helping users find
+                        amazing new
+                        food and restaurants. Dinder's main focus is on user interaction. Don't believe me? Check out the web
+                        version ... <a href="https://secret-oasis-95536.herokuapp.com/">Dinder</a>
+                    </p>
+                </div>
+                <div class="ImagePro">
+                    <img class="imghover" src="/static/imgs/DINDER.png">
+                </div>
             </div>
         </div>
     </div>
@@ -64,10 +64,14 @@
         <h3>Education</h3>
         <hr class="project-hr">
         <div class="gridDrop">
-            <img class="schoolLogos" src="/static/imgs/ucsb_logo.png">
-            <p style="grid-column:1;grid-row: 2;">University of California, Santa Barbara</p>
-            <img class="schoolLogos" src="/static/imgs/kickstart.jpg">
-            <p style="grid-column:2;grid-row: 2;">kickstart Coding</p>
+            <div class="ucsbSchool">
+                <img class="schoolLogos" src="/static/imgs/ucsb_logo.png">
+                <p style="grid-column:1;grid-row: 2;">University of California, Santa Barbara</p>
+            </div>
+            <div class="kickstartSchool">
+                <img class="schoolLogos" src="/static/imgs/kickstart.jpg">
+                <p style="grid-column:1;grid-row: 2;">kickstart Coding</p>
+            </div>
         </div>
     </div>
 

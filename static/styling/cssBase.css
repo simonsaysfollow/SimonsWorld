@@ -25,7 +25,10 @@ header {
 }
 
 .summary {
-    background: lightcoral;
+    background: linear-gradient(to left, #3bbbab, #45ef);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 130px;
 }
 
 .homePage {
@@ -48,10 +51,11 @@ header {
 
 
 .faceImg {
+    padding: 10px;
+    justify-self: center;
     border-radius: 50%;
     width: 200px;
     height: 200px; 
-    float: right;
 
 }
 
@@ -90,10 +94,12 @@ header {
     justify-self: center;
 }
 
+
 .dropProj {
-    margin-top: 25px;
+    margin-top: 25px; 
     
 }
+
 .dropProj > h3 {
     text-align: center;
     font-family: 'Fredericka the Great', cursive;
@@ -113,9 +119,10 @@ header {
 
 
 .bio > p {
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16pt;
+    color: white;
 }
 
 .schoolLogos {
@@ -146,7 +153,6 @@ header {
 }    
 
 .left {
-    
     margin-right:70px;
     
 }
@@ -176,6 +182,10 @@ header {
 
 .ImagePro {
     text-align: center;
+}
+.imghover {
+    width:500px;
+    height:300px;
 }
 
 .imghover:hover {
@@ -285,13 +295,84 @@ header {
     }
 
     .ContactHolder {
-         display: grid;
-         grid-template-columns: repeat(2,1fr);
-         grid-template-rows: 1fr;
-         grid-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
 
     }
-   
 
+    .gridDrop{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 100px;
+    
+    }
+
+    .ucsbSchool {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 100px;
+        justify-items: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .kickstartSchool {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 100px;
+        justify-items: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .proj1 {
+        display: grid;
+        grid-template-columns: 100%; 
+        grid-template-rows: 1fr; 
+        height: 300px;
+        /* margin-bottom: 80px; */
+    }  
+    .summary {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .display1,.display2 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 235px;
+
+    }
+    .imghover{
+        width:400px;
+        height:300px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+  
+
+    .display1 > .ImageDescription {
+        margin-top: 15px;
+    }
+
+    .ImageDescription {
+        justify-self: center;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .left {
+        margin-right:0px;
+    }
+    
+    .right {
+        margin-left: 0px;    
+    }
+
+    
 }
 
