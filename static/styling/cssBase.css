@@ -1,7 +1,7 @@
 
 header {
     background-color: white;
-    position: absolute;
+    position: static;
     z-index: 3;
 }
  
