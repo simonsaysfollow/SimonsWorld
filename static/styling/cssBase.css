@@ -2,6 +2,8 @@
 header {
     background-color: white;
     position: sticky;
+    min-width: 100%;
+    min-height: 100%;
     z-index: 3;
 }
 .navbar{
