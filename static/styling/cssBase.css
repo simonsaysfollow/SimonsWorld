@@ -36,9 +36,9 @@ header {
 }
 
 .homePage {
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
+    position: absolute;
+    min-width: auto;
+    min-height: auto;
     background: url(/static/imgs/sf_life2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
